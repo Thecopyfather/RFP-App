@@ -1,1 +1,66 @@
-# RFP-App
+# Roll For Profit: The Startup Phase
+
+A local-first, mobile-first adaptation of Mark “The Copy Father” Kington’s gamebook. This repository contains an initial playable prototype and a separate extraction of the complete 245-page source PDF. It is **not the complete digital game**.
+
+## Run locally
+
+Use **Node.js 24 or later** and npm. From this directory:
+
+```sh
+npm ci
+npm run dev
+```
+
+Open the local URL printed by Vite. For a production preview:
+
+```sh
+npm run build
+npm run preview
+```
+
+To play on your phone through the same private Wi-Fi network, follow [the private preview instructions](docs/private-preview.md). The implementation is on the [`codex/startup-prototype` branch](https://github.com/Thecopyfather/RFP-App/tree/codex/startup-prototype) with [draft PR #1](https://github.com/Thecopyfather/RFP-App/pull/1). Public deployment and merging the PR are outside the current authorization.
+
+## Validate
+
+```sh
+npm test
+npm run test:native
+npm run validate:story
+npm run build
+npm run test:e2e
+npm run test:pwa
+```
+
+Browser tests require the Playwright browser runtime. If it is not installed, install the browser requested by the test runner using Playwright’s documented installation command. See [the acceptance checklist](docs/implementation-decisions.md#acceptance-checklist) for the recorded validation status; the commands above are instructions, not a claim that they have already passed on every machine.
+
+The [recorded green CI baseline](https://github.com/Thecopyfather/RFP-App/actions/runs/40556710722), commit `48f7f2d36e3c6bd2e2cdaaa678c94c5be7862e11`, passed **84 Vitest tests**, **11 native suites / 1,904 assertions**, the manuscript validator, the production TypeScript/Vite build, **18 development-browser checks** and **8 production PWA/LAN checks**. Its dependency audit reported **zero vulnerabilities** with Vitest 4.1.12. The initial UUID-inference build failure was corrected.
+
+The current browser matrix adds a 320px project alongside 390px and 1440px: **27 development-browser checks and 12 production PWA/LAN checks**. These are the configured counts, not a claim that this expanded matrix passed in the earlier baseline. Consult [the latest PR checks](https://github.com/Thecopyfather/RFP-App/pull/1/checks) for the result on the current commit. The complete workflow is in `.github/workflows/verify.yml`.
+
+## What is playable
+
+The mechanically encoded subset contains **19 sections**: **1–10, 24, 27, 31–33, 83–85, and 280**. It includes character creation, all five original perks, the three original mentors and their approved abilities, individual animated dice, automatic attributes and Capital, a character sheet, local saving/resuming, and restart.
+
+Choices leaving this subset retain their original wording and destination number. They stop at an explicitly labelled **prototype boundary**, rather than navigating to an absent scene or displaying invented story text. Normal play currently reaches a boundary or bankruptcy. The original section-280 victory renderer and threshold logic are included, but **$10,000 is not reachable through the current prototype’s ordinary paths**.
+
+The source extraction contains all **284 numbered sections**, with original text, source-page references and numeric destinations. Extraction and graph validation do **not** establish that every full-book rule has been translated into executable mechanics. Only the playable subset has that implementation scope.
+
+## Saves and offline use
+
+Progress is stored in this browser’s local storage. Saves stay on the current device/browser and origin; there is no account, cloud sync, database, analytics, or paid service. Clearing site data removes local saves. Ordinary browser play can use the private LAN HTTP preview. Installation and service-worker offline caching require a secure context such as HTTPS or the same-device `localhost`; they are **not guaranteed on a phone’s plain HTTP LAN URL**. A private HTTPS service has not been provisioned. Development-server behavior is not an offline guarantee.
+
+Committed dice and effects are saved as game state, so refreshing during an animation does not generate a new roll or award the same effect again. Deliberate manuscript revisits remain distinct from duplicate delivery of one action.
+
+## Source and documentation
+
+- [Source identity and checksum](manuscript/source.json)
+- [Manuscript integrity audit](docs/manuscript-audit.md)
+- [Complete branching graph report](docs/branching-graph.md)
+- [Architecture and data model](docs/architecture.md)
+- [Visual design and illustration briefs](docs/design-spec.md)
+- [Implementation decisions and author rulings](docs/implementation-decisions.md)
+- [Private phone preview](docs/private-preview.md)
+
+The PDF is the single source of story content. Author-approved interpretations are documented separately and do not rewrite the source extraction. Unresolved full-book inconsistencies remain visible in the audit.
+
+Remaining work includes the rest of the executable story, resolution of outstanding manuscript questions, commissioned scene artwork, broader device testing, and complete path verification. The extracted manuscript remains the author’s copyrighted work; its inclusion here is for this adaptation.
