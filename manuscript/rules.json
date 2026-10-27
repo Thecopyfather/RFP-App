@@ -1,0 +1,664 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "fileName": "Roll For Profit_ The Start Up Phase (A5 Print Version) (2).pdf",
+    "sha256": "145b34277d44ac043a0ea12a69117032dc5b53b06bda2f959974c21efcf7e9e9",
+    "pageCount": 245,
+    "pdfTitle": "Roll For Profit: The Start Up Phase (A5 Print Version)",
+    "extractionTool": "PyMuPDF",
+    "extractionToolVersion": "1.26.6",
+    "storySectionCount": 284,
+    "reviewStatus": "extracted-unreviewed",
+    "notes": [
+      "The PDF is the sole source of story text and mechanics.",
+      "Physical PDF pages, printed page labels, and numbered story sections are distinct.",
+      "Evidence matches are not complete semantic rules and must not be executed as mechanics.",
+      "No ambiguous rule, destination, or spelling has been silently corrected."
+    ]
+  },
+  "sourcePages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245
+  ],
+  "evidence": {
+    "dice": [
+      {
+        "sourcePage": 12,
+        "quote": "Roll 1d6",
+        "context": "luence your gameplay. \nStep 1: Rolling Your Stats \nYour character is defined by five key stats that shape your \nbusiness journey. Roll 1d6 (one six-sided dice) for each stat and \nrecord the results on your character sheet: \n●​ Creativity (CR)  – How innovative you are at generating \nnew "
+      }
+    ],
+    "capital": [
+      {
+        "sourcePage": 7,
+        "quote": "$10,000",
+        "context": "Sometimes, you launch a marketing \ncampaign, and it takes off like a rocket. Other times… You \naccidentally set your ad budget to $10,000 a day and \nwatch your savings evaporate before lunch. Laugh, learn, \nand keep playing! \n \n \n"
+      },
+      {
+        "sourcePage": 8,
+        "quote": "$10",
+        "context": "usiness, and the same goes for \nthis game. Your goal is to grow your business, survive \nsetbacks, and ultimately reach your first $10k success. \nHowever, you’ll face unexpected challenges that could make or \nbreak you.  \nBad investments, marketing flops, competitors stealing your \ni"
+      },
+      {
+        "sourcePage": 9,
+        "quote": "$10,000",
+        "context": "ter.  \nEvery decision, every dice roll, and every risk you take will shape \nyour journey.​\n​\nYour goal will be to make your first $10,000 and give yourself a \nstrong foundation to build a business that lasts a lifetime! ​\n​\nHowever, if you lose it all, it’s game over, and you’ll have to"
+      },
+      {
+        "sourcePage": 13,
+        "quote": "$1000",
+        "context": "lience (RE) & +1 to \nNetworking (NE) \n●​ \"Charismatic Leader\" – +2 to Networking (NE) \n●​ \"Investor-Backed\" – Start with an extra $1000 in Capital \nbut -2 to Resilience \nChoose wisely, this will shape how you play the game! \nStep 3: Choosing Your Mentors \nThroughout your journey, you "
+      },
+      {
+        "sourcePage": 222,
+        "quote": "$1,000",
+        "context": "are marketing campaigns, bold pitches, and \ndice rolls. \nYou begin at Section 1, with nothing more than a dream, a \nnotebook, and $1,000 Capital, your lifeblood, your health bar, \nyour measure of power in the marketplace. Lose it all and your \nempire crumbles to dust. Grow it to $10,00"
+      },
+      {
+        "sourcePage": 222,
+        "quote": "$10,000",
+        "context": " lifeblood, your health bar, \nyour measure of power in the marketplace. Lose it all and your \nempire crumbles to dust. Grow it to $10,000 and you’ll ascend to \nthe next chapter of your legend.​\n​\nIf you have reached at least $10,000 Capital, immediately turn to \nSection 280 unless the c"
+      },
+      {
+        "sourcePage": 222,
+        "quote": "$10,000",
+        "context": "mpire crumbles to dust. Grow it to $10,000 and you’ll ascend to \nthe next chapter of your legend.​\n​\nIf you have reached at least $10,000 Capital, immediately turn to \nSection 280 unless the current section specifically tells you \notherwise.  \n"
+      },
+      {
+        "sourcePage": 224,
+        "quote": "$1,000",
+        "context": "r treasure chest and your life bar. Each coin you earn or lose \nrepresents the tide of your business fortunes. \n●​ You begin with $1,000 Capital.​\n \n●​ Sections may grant you Capital (sales, victories, \ninvestments) or take it away (bad hires, wasted ad spend, \ntrolls).​\n \n●​ If your C"
+      },
+      {
+        "sourcePage": 224,
+        "quote": "$10,000,",
+        "context": " falls to zero, your business collapses, \nyour story ends, and you must return to the beginning to \ntry again.​\n \n●​ If you reach $10,000, you have proven yourself worthy \nand move to section 280.​\n \nRemember: money here is not a score. It is blood in the veins. \nTreat it recklessly, and"
+      },
+      {
+        "sourcePage": 225,
+        "quote": "$10,000",
+        "context": "e more than an idea. \nYou will roll dice, make choices, win or lose Capital, and, if \nfortune and wit allow, climb to the coveted $10,000 threshold \nthat marks your true beginning. \n"
+      },
+      {
+        "sourcePage": 228,
+        "quote": "$100",
+        "context": " dollar count. Gain +1 \nResilience (RE) permanently while The Bootstrapper is \nyour mentor. You also reduce every Capital loss by $100.​\n \nOnce-Per-Act Power: Shoestring Miracle \n●​ When you hit a major failure roll (6 or below) and would \nnormally lose Capital, you may instead roll "
+      },
+      {
+        "sourcePage": 230,
+        "quote": "$100",
+        "context": "st you Capital, you may choose \nto “grind it out.” Reduce the loss by half, rounding the amount you \nstill lose up to the nearest $100. You don’t lose, you just work \nharder. \nThe Hustler’s Wisdom \n●​ “Perfection kills dreams. Action makes money.”​\n \n●​ “Every ‘no’ is just a ‘not yet"
+      },
+      {
+        "sourcePage": 233,
+        "quote": "$100",
+        "context": " Low CPC = you’re doing something \nright. \n \nCPA (Cost Per Acquisition) \nThe cost to actually acquire a customer. If it costs you $100 to sell \na $50 product, you’ve got a problem. \n \n"
+      },
+      {
+        "sourcePage": 233,
+        "quote": "$50",
+        "context": "e doing something \nright. \n \nCPA (Cost Per Acquisition) \nThe cost to actually acquire a customer. If it costs you $100 to sell \na $50 product, you’ve got a problem. \n \n"
+      }
+    ],
+    "attributes": [
+      {
+        "sourcePage": 6,
+        "quote": "networking",
+        "context": "eneurs). \n●​ And choose different paths based on your playstyle, \nwhether you’re a sales-driven closer, a marketing genius, \nor a networking master. \nEach time you play, your experience will be different depending \non the choices you make, the mentors you select, and how lucky \n(or unlucky"
+      },
+      {
+        "sourcePage": 12,
+        "quote": "networking",
+        "context": "Are you a marketing genius who can sell anything but struggles \nwith organization?  \nOr a networking pro who thrives on connections but has zero tech \nskills?  \nThe choices you make here will influence your gameplay. \nStep 1: Rolling Your Stats \nYour"
+      },
+      {
+        "sourcePage": 12,
+        "quote": "Creativity",
+        "context": "at shape your \nbusiness journey. Roll 1d6 (one six-sided dice) for each stat and \nrecord the results on your character sheet: \n●​ Creativity (CR)  – How innovative you are at generating \nnew marketing ideas and strategies. \n●​ Tactics (TA)  – Your ability to close deals, negotiate, and \nex"
+      },
+      {
+        "sourcePage": 12,
+        "quote": "(CR)",
+        "context": "ur \nbusiness journey. Roll 1d6 (one six-sided dice) for each stat and \nrecord the results on your character sheet: \n●​ Creativity (CR)  – How innovative you are at generating \nnew marketing ideas and strategies. \n●​ Tactics (TA)  – Your ability to close deals, negotiate, and \nexecute"
+      },
+      {
+        "sourcePage": 12,
+        "quote": "Tactics",
+        "context": "lts on your character sheet: \n●​ Creativity (CR)  – How innovative you are at generating \nnew marketing ideas and strategies. \n●​ Tactics (TA)  – Your ability to close deals, negotiate, and \nexecute under pressure. \n●​ Resilience (RE)  – How well you handle setbacks, \ncriticism, and fai"
+      },
+      {
+        "sourcePage": 12,
+        "quote": "(TA)",
+        "context": "our character sheet: \n●​ Creativity (CR)  – How innovative you are at generating \nnew marketing ideas and strategies. \n●​ Tactics (TA)  – Your ability to close deals, negotiate, and \nexecute under pressure. \n●​ Resilience (RE)  – How well you handle setbacks, \ncriticism, and failure."
+      },
+      {
+        "sourcePage": 12,
+        "quote": "Resilience",
+        "context": "\nnew marketing ideas and strategies. \n●​ Tactics (TA)  – Your ability to close deals, negotiate, and \nexecute under pressure. \n●​ Resilience (RE)  – How well you handle setbacks, \ncriticism, and failure. \n●​ Networking (NE)  – Your skill in forming connections, \nattracting influencers, and"
+      },
+      {
+        "sourcePage": 12,
+        "quote": "(RE)",
+        "context": "ing ideas and strategies. \n●​ Tactics (TA)  – Your ability to close deals, negotiate, and \nexecute under pressure. \n●​ Resilience (RE)  – How well you handle setbacks, \ncriticism, and failure. \n●​ Networking (NE)  – Your skill in forming connections, \nattracting influencers, and buil"
+      },
+      {
+        "sourcePage": 12,
+        "quote": "Networking",
+        "context": " deals, negotiate, and \nexecute under pressure. \n●​ Resilience (RE)  – How well you handle setbacks, \ncriticism, and failure. \n●​ Networking (NE)  – Your skill in forming connections, \nattracting influencers, and building partnerships. \n●​ Tech Savviness (TS)  – Your ability to master onli"
+      },
+      {
+        "sourcePage": 12,
+        "quote": "(NE)",
+        "context": "otiate, and \nexecute under pressure. \n●​ Resilience (RE)  – How well you handle setbacks, \ncriticism, and failure. \n●​ Networking (NE)  – Your skill in forming connections, \nattracting influencers, and building partnerships. \n●​ Tech Savviness (TS)  – Your ability to master online \nt"
+      },
+      {
+        "sourcePage": 12,
+        "quote": "Tech Savviness",
+        "context": "m, and failure. \n●​ Networking (NE)  – Your skill in forming connections, \nattracting influencers, and building partnerships. \n●​ Tech Savviness (TS)  – Your ability to master online \ntools, funnels, and paid ads. \nIf your rolls leave you with a particularly weak stat, don’t worry, \nevery entr"
+      },
+      {
+        "sourcePage": 12,
+        "quote": "(TS)",
+        "context": " \n●​ Networking (NE)  – Your skill in forming connections, \nattracting influencers, and building partnerships. \n●​ Tech Savviness (TS)  – Your ability to master online \ntools, funnels, and paid ads. \nIf your rolls leave you with a particularly weak stat, don’t worry, \nevery entrepren"
+      },
+      {
+        "sourcePage": 13,
+        "quote": "Tactics",
+        "context": "●​ \"Born Closer\" – +2 to Tactics (TA) \n●​ \"Marketing Genius\" – +2 to Creativity (CR) \n●​ \"Hustler’s Work Ethic\" – +1 to Resilience (RE) & +1 to \nNetworking (NE) \n●​ \"Charismatic Lead"
+      },
+      {
+        "sourcePage": 13,
+        "quote": "(TA)",
+        "context": "●​ \"Born Closer\" – +2 to Tactics (TA) \n●​ \"Marketing Genius\" – +2 to Creativity (CR) \n●​ \"Hustler’s Work Ethic\" – +1 to Resilience (RE) & +1 to \nNetworking (NE) \n●​ \"Charismatic Leader\" –"
+      },
+      {
+        "sourcePage": 13,
+        "quote": "Creativity",
+        "context": "●​ \"Born Closer\" – +2 to Tactics (TA) \n●​ \"Marketing Genius\" – +2 to Creativity (CR) \n●​ \"Hustler’s Work Ethic\" – +1 to Resilience (RE) & +1 to \nNetworking (NE) \n●​ \"Charismatic Leader\" – +2 to Networking (NE) \n●​ \"Investor-Backe"
+      },
+      {
+        "sourcePage": 13,
+        "quote": "(CR)",
+        "context": "●​ \"Born Closer\" – +2 to Tactics (TA) \n●​ \"Marketing Genius\" – +2 to Creativity (CR) \n●​ \"Hustler’s Work Ethic\" – +1 to Resilience (RE) & +1 to \nNetworking (NE) \n●​ \"Charismatic Leader\" – +2 to Networking (NE) \n●​ \"Investor-Backed\" – "
+      },
+      {
+        "sourcePage": 13,
+        "quote": "Resilience",
+        "context": "●​ \"Born Closer\" – +2 to Tactics (TA) \n●​ \"Marketing Genius\" – +2 to Creativity (CR) \n●​ \"Hustler’s Work Ethic\" – +1 to Resilience (RE) & +1 to \nNetworking (NE) \n●​ \"Charismatic Leader\" – +2 to Networking (NE) \n●​ \"Investor-Backed\" – Start with an extra $1000 in Capital \nbut -2 t"
+      },
+      {
+        "sourcePage": 13,
+        "quote": "(RE)",
+        "context": "​ \"Born Closer\" – +2 to Tactics (TA) \n●​ \"Marketing Genius\" – +2 to Creativity (CR) \n●​ \"Hustler’s Work Ethic\" – +1 to Resilience (RE) & +1 to \nNetworking (NE) \n●​ \"Charismatic Leader\" – +2 to Networking (NE) \n●​ \"Investor-Backed\" – Start with an extra $1000 in Capital \nbut -2 to Res"
+      },
+      {
+        "sourcePage": 13,
+        "quote": "Networking",
+        "context": "\" – +2 to Tactics (TA) \n●​ \"Marketing Genius\" – +2 to Creativity (CR) \n●​ \"Hustler’s Work Ethic\" – +1 to Resilience (RE) & +1 to \nNetworking (NE) \n●​ \"Charismatic Leader\" – +2 to Networking (NE) \n●​ \"Investor-Backed\" – Start with an extra $1000 in Capital \nbut -2 to Resilience \nChoose wise"
+      },
+      {
+        "sourcePage": 13,
+        "quote": "(NE)",
+        "context": "actics (TA) \n●​ \"Marketing Genius\" – +2 to Creativity (CR) \n●​ \"Hustler’s Work Ethic\" – +1 to Resilience (RE) & +1 to \nNetworking (NE) \n●​ \"Charismatic Leader\" – +2 to Networking (NE) \n●​ \"Investor-Backed\" – Start with an extra $1000 in Capital \nbut -2 to Resilience \nChoose wisely, t"
+      },
+      {
+        "sourcePage": 13,
+        "quote": "Networking",
+        "context": "2 to Creativity (CR) \n●​ \"Hustler’s Work Ethic\" – +1 to Resilience (RE) & +1 to \nNetworking (NE) \n●​ \"Charismatic Leader\" – +2 to Networking (NE) \n●​ \"Investor-Backed\" – Start with an extra $1000 in Capital \nbut -2 to Resilience \nChoose wisely, this will shape how you play the game! \nStep "
+      },
+      {
+        "sourcePage": 13,
+        "quote": "(NE)",
+        "context": "vity (CR) \n●​ \"Hustler’s Work Ethic\" – +1 to Resilience (RE) & +1 to \nNetworking (NE) \n●​ \"Charismatic Leader\" – +2 to Networking (NE) \n●​ \"Investor-Backed\" – Start with an extra $1000 in Capital \nbut -2 to Resilience \nChoose wisely, this will shape how you play the game! \nStep 3: Ch"
+      },
+      {
+        "sourcePage": 13,
+        "quote": "Resilience",
+        "context": "ing (NE) \n●​ \"Charismatic Leader\" – +2 to Networking (NE) \n●​ \"Investor-Backed\" – Start with an extra $1000 in Capital \nbut -2 to Resilience \nChoose wisely, this will shape how you play the game! \nStep 3: Choosing Your Mentors \nThroughout your journey, you won’t be going it alone. Before \n"
+      },
+      {
+        "sourcePage": 223,
+        "quote": "Creativity",
+        "context": " idea soars or \nbelly-flops into the abyss.​\n \nWhen you are told to roll, cast two six-sided dice (2d6) and add \nthe stat listed, Creativity, Tactics, Resilience, Networking, or Tech \nSavviness. \n●​ 11+ means triumph: your gambit works.​\n \n●​ 8-10 is mixed: success tinged with cost or comp"
+      },
+      {
+        "sourcePage": 223,
+        "quote": "Tactics",
+        "context": "or \nbelly-flops into the abyss.​\n \nWhen you are told to roll, cast two six-sided dice (2d6) and add \nthe stat listed, Creativity, Tactics, Resilience, Networking, or Tech \nSavviness. \n●​ 11+ means triumph: your gambit works.​\n \n●​ 8-10 is mixed: success tinged with cost or compromise.​\n"
+      },
+      {
+        "sourcePage": 223,
+        "quote": "Resilience",
+        "context": "-flops into the abyss.​\n \nWhen you are told to roll, cast two six-sided dice (2d6) and add \nthe stat listed, Creativity, Tactics, Resilience, Networking, or Tech \nSavviness. \n●​ 11+ means triumph: your gambit works.​\n \n●​ 8-10 is mixed: success tinged with cost or compromise.​\n \n●​ 7 or le"
+      },
+      {
+        "sourcePage": 223,
+        "quote": "Networking",
+        "context": "the abyss.​\n \nWhen you are told to roll, cast two six-sided dice (2d6) and add \nthe stat listed, Creativity, Tactics, Resilience, Networking, or Tech \nSavviness. \n●​ 11+ means triumph: your gambit works.​\n \n●​ 8-10 is mixed: success tinged with cost or compromise.​\n \n●​ 7 or less is failur"
+      },
+      {
+        "sourcePage": 223,
+        "quote": "Tech \nSavviness",
+        "context": "hen you are told to roll, cast two six-sided dice (2d6) and add \nthe stat listed, Creativity, Tactics, Resilience, Networking, or Tech \nSavviness. \n●​ 11+ means triumph: your gambit works.​\n \n●​ 8-10 is mixed: success tinged with cost or compromise.​\n \n●​ 7 or less is failure: Capital vanishes,"
+      },
+      {
+        "sourcePage": 225,
+        "quote": "networking",
+        "context": "ps.​\n \nEach Mentor grants you two gifts: \n1.​ A passive ability, a constant bonus in their area of \nmastery (systems, selling, or networking).​\n \n2.​ A once-per-Act power, a trump card you can play when \nthe dice, or fate, deal you a cruel hand.​\n \nYou will choose your first Mentor before "
+      },
+      {
+        "sourcePage": 228,
+        "quote": "Resilience",
+        "context": "ect first mentor. \n \nWhat They Offer \nPassive Ability: Frugal Mastery \n●​ You’ve learned how to make every dollar count. Gain +1 \nResilience (RE) permanently while The Bootstrapper is \nyour mentor. You also reduce every Capital loss by $100.​\n \nOnce-Per-Act Power: Shoestring Miracle \n●​ Wh"
+      },
+      {
+        "sourcePage": 228,
+        "quote": "(RE)",
+        "context": "entor. \n \nWhat They Offer \nPassive Ability: Frugal Mastery \n●​ You’ve learned how to make every dollar count. Gain +1 \nResilience (RE) permanently while The Bootstrapper is \nyour mentor. You also reduce every Capital loss by $100.​\n \nOnce-Per-Act Power: Shoestring Miracle \n●​ When yo"
+      },
+      {
+        "sourcePage": 230,
+        "quote": "Resilience",
+        "context": "What They Offer \nPassive Ability: Relentless Drive​\nYou refuse to quit. Gain +2 Resilience (RE) permanently while \nThe Hustler is your mentor. \nOnce-Per-Act Power: Grind It Out​\nWhen you fail a roll that would cost you Capital, you may choo"
+      },
+      {
+        "sourcePage": 230,
+        "quote": "(RE)",
+        "context": "What They Offer \nPassive Ability: Relentless Drive​\nYou refuse to quit. Gain +2 Resilience (RE) permanently while \nThe Hustler is your mentor. \nOnce-Per-Act Power: Grind It Out​\nWhen you fail a roll that would cost you Capital, you may choose \nt"
+      },
+      {
+        "sourcePage": 231,
+        "quote": "Networking",
+        "context": "opportunities, \nthe Deal Maker is your mentor. \nWhat They Offer \nPassive Ability: Silver Tongue​\nYour words carry weight. Gain +2 Networking (NE) permanently \nwhile The Deal Maker is your mentor. \nOnce-Per-Act Power: The Big Play​\nOnce per act, when you’re facing a major failure or setback"
+      },
+      {
+        "sourcePage": 231,
+        "quote": "(NE)",
+        "context": "es, \nthe Deal Maker is your mentor. \nWhat They Offer \nPassive Ability: Silver Tongue​\nYour words carry weight. Gain +2 Networking (NE) permanently \nwhile The Deal Maker is your mentor. \nOnce-Per-Act Power: The Big Play​\nOnce per act, when you’re facing a major failure or setback, you"
+      },
+      {
+        "sourcePage": 238,
+        "quote": "Resilience",
+        "context": "V = a customer \nworth keeping. \n \nBurnout \nWhen you work yourself into the ground chasing business growth. \nIn the game, you lose Resilience. In real life, you end up crying \nover spreadsheets at 2 a.m. \n \n \nThat’s it. You now speak fluent “marketer.” Don’t worry, you’ll pick \nup the rest "
+      },
+      {
+        "sourcePage": 239,
+        "quote": "Resilience",
+        "context": "Were you a natural closer, a creative \ngenius, a resilient grinder?)​\n \n●​ Where did I fail, hard? (Did tech rolls sink you? Did \nResilience run out fast?)​\n \n●​ What strategies would I do differently next time?​\n \nThis isn’t just about the game, it’s about understanding how you \noperate a"
+      },
+      {
+        "sourcePage": 239,
+        "quote": "Networking",
+        "context": " the power of guidance. \n●​ If you failed because of money management, start \ntracking your expenses IRL.​\n \n●​ If you thrived on Networking, maybe it’s time to hit a local \nevent or DM that potential partner.​\n \n●​ If Resilience saved you, ask yourself what habits keep you \nin the game wh"
+      },
+      {
+        "sourcePage": 239,
+        "quote": "Resilience",
+        "context": "ur expenses IRL.​\n \n●​ If you thrived on Networking, maybe it’s time to hit a local \nevent or DM that potential partner.​\n \n●​ If Resilience saved you, ask yourself what habits keep you \nin the game when things go sideways.​\n \n"
+      }
+    ],
+    "mentors": [
+      {
+        "sourcePage": 225,
+        "quote": "The Bootstrapper",
+        "context": "●​ The Bootstrapper – Master of stretching every dollar until \nit squeals. Systems, tools, and frugality are their creed.​\n \n●​ The Hustler – Relentless, fast-talking, a"
+      },
+      {
+        "sourcePage": 225,
+        "quote": "The Hustler",
+        "context": "●​ The Bootstrapper – Master of stretching every dollar until \nit squeals. Systems, tools, and frugality are their creed.​\n \n●​ The Hustler – Relentless, fast-talking, always chasing the \nnext sale. Deals and pressure are where they thrive.​\n \n●​ The Deal Maker – A charmer, a networker, a"
+      },
+      {
+        "sourcePage": 225,
+        "quote": "The Deal Maker",
+        "context": "eed.​\n \n●​ The Hustler – Relentless, fast-talking, always chasing the \nnext sale. Deals and pressure are where they thrive.​\n \n●​ The Deal Maker – A charmer, a networker, a master of \nalliances. Where others see obstacles, they see \npartnerships.​\n \nEach Mentor grants you two gifts: \n1.​ A pas"
+      },
+      {
+        "sourcePage": 227,
+        "quote": "The Bootstrapper",
+        "context": "o, apprentice entrepreneur, who will guide you through your first \nshaky steps into the world of business? \nTurn the page to meet The Bootstrapper, your first potential \nguide. \n \n \n \nThe Bootstrapper \n\"Why spend a dollar when you can spend a dime… or better yet, \nnothing at all?\" \nThe Bootstrap"
+      },
+      {
+        "sourcePage": 227,
+        "quote": "The Bootstrapper",
+        "context": " your first \nshaky steps into the world of business? \nTurn the page to meet The Bootstrapper, your first potential \nguide. \n \n \n \nThe Bootstrapper \n\"Why spend a dollar when you can spend a dime… or better yet, \nnothing at all?\" \nThe Bootstrapper is the gritty survivor of the business world. They"
+      },
+      {
+        "sourcePage": 227,
+        "quote": "The Bootstrapper",
+        "context": "first potential \nguide. \n \n \n \nThe Bootstrapper \n\"Why spend a dollar when you can spend a dime… or better yet, \nnothing at all?\" \nThe Bootstrapper is the gritty survivor of the business world. They \ndon’t need investors, fancy offices, or overpriced software \nsubscriptions. Armed with duct tape,"
+      },
+      {
+        "sourcePage": 228,
+        "quote": "The Bootstrapper",
+        "context": " launches, zero-dollar \nmonths, trolls in the inbox, and lived to tell the tale. And now, \nthey’ll teach you how to do the same. \nThe Bootstrapper isn’t glamorous. They’re not flashy. They’re not \nthe one sipping cocktails in Bali while posting “#CEOlife.” They’re \nin the trenches, grinding out "
+      },
+      {
+        "sourcePage": 228,
+        "quote": "the Bootstrapper",
+        "context": "ing small wins until they snowball into success. \nIf you’re the kind of player who wants to play it smart, lean, and \ncalculated, the Bootstrapper is your perfect first mentor. \n \nWhat They Offer \nPassive Ability: Frugal Mastery \n●​ You’ve learned how to make every dollar count. Gain +1 \nResilie"
+      },
+      {
+        "sourcePage": 228,
+        "quote": "The Bootstrapper",
+        "context": "er \nPassive Ability: Frugal Mastery \n●​ You’ve learned how to make every dollar count. Gain +1 \nResilience (RE) permanently while The Bootstrapper is \nyour mentor. You also reduce every Capital loss by $100.​\n \nOnce-Per-Act Power: Shoestring Miracle \n●​ When you hit a major failure roll (6 or be"
+      },
+      {
+        "sourcePage": 228,
+        "quote": "The Bootstrapper",
+        "context": "ld \nnormally lose Capital, you may instead roll again. On the \nsecond roll, you ignore the Capital loss, even if you still \nfail. The Bootstrapper knows how to patch the holes and \nkeep you alive another day.​\n \n \n"
+      },
+      {
+        "sourcePage": 229,
+        "quote": "The Bootstrapper",
+        "context": "The Bootstrapper’s Wisdom \n●​ “Your first office? It’s your bedroom. Deal with it.”​\n \n●​ “If you can’t sell it with duct tape, Canva, and a free trial, it \nprobably "
+      },
+      {
+        "sourcePage": 229,
+        "quote": "The Hustler",
+        "context": "h selling.”​\n \n●​ “Remember: Amazon started in a garage. Your business \ndoesn’t need to look perfect. It just needs to survive.” \nThe Hustler \n“Sleep is for the weak. Coffee is for the hustlers.” \nThe Hustler is pure energy bottled up in human form. They’re the \nentrepreneur who will cold D"
+      },
+      {
+        "sourcePage": 229,
+        "quote": "The Hustler",
+        "context": "ess \ndoesn’t need to look perfect. It just needs to survive.” \nThe Hustler \n“Sleep is for the weak. Coffee is for the hustlers.” \nThe Hustler is pure energy bottled up in human form. They’re the \nentrepreneur who will cold DM 200 strangers before breakfast, \npitch three new offers by lunch,"
+      },
+      {
+        "sourcePage": 229,
+        "quote": "The Hustler",
+        "context": " was just fuel. Every slammed door made \nthem knock harder on the next one. And eventually, all that \ngrinding turned into wins. \nThe Hustler isn’t polished. They’re not the type who waits for \nperfect branding or a shiny funnel. They thrive in chaos, live off \nmomentum, and believe that vo"
+      },
+      {
+        "sourcePage": 229,
+        "quote": "the Hustler",
+        "context": " that volume beats precision every single \ntime. If you want to learn how to sell, survive, and thrive with \nsheer force of will, the Hustler is your mentor. \n"
+      },
+      {
+        "sourcePage": 230,
+        "quote": "The Hustler",
+        "context": "What They Offer \nPassive Ability: Relentless Drive​\nYou refuse to quit. Gain +2 Resilience (RE) permanently while \nThe Hustler is your mentor. \nOnce-Per-Act Power: Grind It Out​\nWhen you fail a roll that would cost you Capital, you may choose \nto “grind it out.” Reduce the lo"
+      },
+      {
+        "sourcePage": 230,
+        "quote": "The Hustler",
+        "context": "ut.” Reduce the loss by half, rounding the amount you \nstill lose up to the nearest $100. You don’t lose, you just work \nharder. \nThe Hustler’s Wisdom \n●​ “Perfection kills dreams. Action makes money.”​\n \n●​ “Every ‘no’ is just a ‘not yet’ waiting to happen.”​\n \n●​ “You don’t need talent, y"
+      },
+      {
+        "sourcePage": 230,
+        "quote": "The Deal Maker",
+        "context": " ‘not yet’ waiting to happen.”​\n \n●​ “You don’t need talent, you need stamina. Outwork \neveryone, and eventually, you’ll win.” \n \nThe Deal Maker \n“Why work harder when you can work smarter, and let someone \nelse foot the bill?” \nThe Deal Maker is the smooth-talking operator of the business \nwo"
+      },
+      {
+        "sourcePage": 230,
+        "quote": "The Deal Maker",
+        "context": "nd eventually, you’ll win.” \n \nThe Deal Maker \n“Why work harder when you can work smarter, and let someone \nelse foot the bill?” \nThe Deal Maker is the smooth-talking operator of the business \nworld. They know the right people, say the right words, and \nalways seem to land in the right room at"
+      },
+      {
+        "sourcePage": 231,
+        "quote": "the Deal Maker",
+        "context": "-figure deal, or who \nsomehow convinces a vendor to throw in 90 extra days of credit \n“just because.” Where others see obstacles, the Deal Maker sees \nleverage. \nThe Deal Maker isn’t the one burning midnight oil or scrimping \npennies. They’re playing the high-level game, cutting deals, \ntradin"
+      },
+      {
+        "sourcePage": 231,
+        "quote": "The Deal Maker",
+        "context": "nvinces a vendor to throw in 90 extra days of credit \n“just because.” Where others see obstacles, the Deal Maker sees \nleverage. \nThe Deal Maker isn’t the one burning midnight oil or scrimping \npennies. They’re playing the high-level game, cutting deals, \ntrading favors, and building partnersh"
+      },
+      {
+        "sourcePage": 231,
+        "quote": "the Deal Maker",
+        "context": "jectory of a business overnight. If you want to learn how to \nscale faster through connections, negotiations, and opportunities, \nthe Deal Maker is your mentor. \nWhat They Offer \nPassive Ability: Silver Tongue​\nYour words carry weight. Gain +2 Networking (NE) permanently \nwhile The Deal Maker "
+      },
+      {
+        "sourcePage": 231,
+        "quote": "The Deal Maker",
+        "context": "our mentor. \nWhat They Offer \nPassive Ability: Silver Tongue​\nYour words carry weight. Gain +2 Networking (NE) permanently \nwhile The Deal Maker is your mentor. \nOnce-Per-Act Power: The Big Play​\nOnce per act, when you’re facing a major failure or setback, you \ncan “call in a favor.” Instead o"
+      },
+      {
+        "sourcePage": 231,
+        "quote": "The Deal Maker",
+        "context": "lure or setback, you \ncan “call in a favor.” Instead of taking the loss, treat the event as a \nneutral outcome, no gain, no loss. The Deal Maker knows how to \nsmooth things over and keep the game moving. \nThe Deal Maker’s Wisdom \n●​ “Every ‘no’ just means you’re talking to the wrong person.”​\n"
+      },
+      {
+        "sourcePage": 231,
+        "quote": "The Deal Maker",
+        "context": "eat the event as a \nneutral outcome, no gain, no loss. The Deal Maker knows how to \nsmooth things over and keep the game moving. \nThe Deal Maker’s Wisdom \n●​ “Every ‘no’ just means you’re talking to the wrong person.”​\n \n●​ “Money is good. Relationships are better.”​\n \n●​ “Deals don’t just hap"
+      }
+    ],
+    "perks": [
+      {
+        "sourcePage": 6,
+        "quote": "marketing genius",
+        "context": "ng \nsurprises at entrepreneurs). \n●​ And choose different paths based on your playstyle, \nwhether you’re a sales-driven closer, a marketing genius, \nor a networking master. \nEach time you play, your experience will be different depending \non the choices you make, the mentors you select, and how "
+      },
+      {
+        "sourcePage": 12,
+        "quote": "marketing genius",
+        "context": "Are you a marketing genius who can sell anything but struggles \nwith organization?  \nOr a networking pro who thrives on connections but has zero tech \nskills?  \nThe choices you"
+      },
+      {
+        "sourcePage": 13,
+        "quote": "Born Closer",
+        "context": "●​ \"Born Closer\" – +2 to Tactics (TA) \n●​ \"Marketing Genius\" – +2 to Creativity (CR) \n●​ \"Hustler’s Work Ethic\" – +1 to Resilience (RE) & +1 to \nNetworking (NE) \n●​ "
+      },
+      {
+        "sourcePage": 13,
+        "quote": "Marketing Genius",
+        "context": "●​ \"Born Closer\" – +2 to Tactics (TA) \n●​ \"Marketing Genius\" – +2 to Creativity (CR) \n●​ \"Hustler’s Work Ethic\" – +1 to Resilience (RE) & +1 to \nNetworking (NE) \n●​ \"Charismatic Leader\" – +2 to Networking (NE)"
+      },
+      {
+        "sourcePage": 13,
+        "quote": "Hustler’s Work Ethic",
+        "context": "●​ \"Born Closer\" – +2 to Tactics (TA) \n●​ \"Marketing Genius\" – +2 to Creativity (CR) \n●​ \"Hustler’s Work Ethic\" – +1 to Resilience (RE) & +1 to \nNetworking (NE) \n●​ \"Charismatic Leader\" – +2 to Networking (NE) \n●​ \"Investor-Backed\" – Start with an extra $1000 "
+      },
+      {
+        "sourcePage": 13,
+        "quote": "Charismatic Leader",
+        "context": ") \n●​ \"Marketing Genius\" – +2 to Creativity (CR) \n●​ \"Hustler’s Work Ethic\" – +1 to Resilience (RE) & +1 to \nNetworking (NE) \n●​ \"Charismatic Leader\" – +2 to Networking (NE) \n●​ \"Investor-Backed\" – Start with an extra $1000 in Capital \nbut -2 to Resilience \nChoose wisely, this will shape how you p"
+      },
+      {
+        "sourcePage": 13,
+        "quote": "Investor-Backed",
+        "context": "\n●​ \"Hustler’s Work Ethic\" – +1 to Resilience (RE) & +1 to \nNetworking (NE) \n●​ \"Charismatic Leader\" – +2 to Networking (NE) \n●​ \"Investor-Backed\" – Start with an extra $1000 in Capital \nbut -2 to Resilience \nChoose wisely, this will shape how you play the game! \nStep 3: Choosing Your Mentors \n"
+      }
+    ],
+    "conditions": [
+      {
+        "sourcePage": 5,
+        "quote": "if",
+        "context": "ness powerhouse with a \nthriving empire.  \nAlong the way, you’ll make choices, take risks, roll dice to \ndetermine outcomes, and, if you play your cards right, walk away \nwith a newfound understanding of what it actually takes to build a \nsuccessful business. \nWhether you’ve always"
+      },
+      {
+        "sourcePage": 8,
+        "quote": "If",
+        "context": " \n \nWho This Book Is For \n●​ Aspiring Entrepreneurs – If you’ve ever thought, I want \nto start a business, but I have no clue what I’m doing, \nyou’re in the right place. \n●​ New Business Owners – Already st"
+      },
+      {
+        "sourcePage": 8,
+        "quote": "If",
+        "context": "like \nyou’re winging it? This book will help you think more \nstrategically and make better decisions. \n●​ Marketing Enthusiasts – If you love learning about \nbranding, ads, and sales but want an interactive way to \ntest your knowledge, this book will keep you hooked. \n●​ People Who"
+      },
+      {
+        "sourcePage": 8,
+        "quote": "If",
+        "context": ", and sales but want an interactive way to \ntest your knowledge, this book will keep you hooked. \n●​ People Who Just Love Games – If RPGs, strategy \ngames, or choose-your-own-adventure books are your \nthing, you’ll love this mix of storytelling, \ndecision-making, and dice-driven ga"
+      },
+      {
+        "sourcePage": 8,
+        "quote": "IF",
+        "context": "ing your \nideas, sound familiar?  \nLuckily, you’ll also have mentors, resources, and game \nmechanics that can turn things around… IF you play smart. \n"
+      },
+      {
+        "sourcePage": 9,
+        "quote": "if",
+        "context": "will be to make your first $10,000 and give yourself a \nstrong foundation to build a business that lasts a lifetime! ​\n​\nHowever, if you lose it all, it’s game over, and you’ll have to start \nfrom the beginning again!  \nSo, are you ready to build your empire? \nGrab your dice, sharp"
+      },
+      {
+        "sourcePage": 11,
+        "quote": "if",
+        "context": "en start? \nDo you register an LLC? Build a website? Buy a course from a \nguy who promises you’ll be making six figures in a month if you \njust ‘DM 100 people a day’?  \nYou grab your notebook and scribble down some ideas.  \nMaybe you’ll sell a product, offer a service, start a YouTu"
+      },
+      {
+        "sourcePage": 12,
+        "quote": "If",
+        "context": " influencers, and building partnerships. \n●​ Tech Savviness (TS)  – Your ability to master online \ntools, funnels, and paid ads. \nIf your rolls leave you with a particularly weak stat, don’t worry, \nevery entrepreneur has strengths and weaknesses!  \nYour mentor choices and business"
+      },
+      {
+        "sourcePage": 222,
+        "quote": "If",
+        "context": "lace. Lose it all and your \nempire crumbles to dust. Grow it to $10,000 and you’ll ascend to \nthe next chapter of your legend.​\n​\nIf you have reached at least $10,000 Capital, immediately turn to \nSection 280 unless the current section specifically tells you \notherwise.  \n"
+      },
+      {
+        "sourcePage": 222,
+        "quote": "unless",
+        "context": "’ll ascend to \nthe next chapter of your legend.​\n​\nIf you have reached at least $10,000 Capital, immediately turn to \nSection 280 unless the current section specifically tells you \notherwise.  \n"
+      },
+      {
+        "sourcePage": 222,
+        "quote": "otherwise",
+        "context": "If you have reached at least $10,000 Capital, immediately turn to \nSection 280 unless the current section specifically tells you \notherwise.  \n"
+      },
+      {
+        "sourcePage": 224,
+        "quote": "If",
+        "context": " \n●​ Sections may grant you Capital (sales, victories, \ninvestments) or take it away (bad hires, wasted ad spend, \ntrolls).​\n \n●​ If your Capital ever falls to zero, your business collapses, \nyour story ends, and you must return to the beginning to \ntry again.​\n \n●​ If you reach $1"
+      },
+      {
+        "sourcePage": 224,
+        "quote": "If",
+        "context": " Capital ever falls to zero, your business collapses, \nyour story ends, and you must return to the beginning to \ntry again.​\n \n●​ If you reach $10,000, you have proven yourself worthy \nand move to section 280.​\n \nRemember: money here is not a score. It is blood in the veins. \nTreat"
+      },
+      {
+        "sourcePage": 225,
+        "quote": "if",
+        "context": "ey \nYou will begin as a small dreamer with little more than an idea. \nYou will roll dice, make choices, win or lose Capital, and, if \nfortune and wit allow, climb to the coveted $10,000 threshold \nthat marks your true beginning. \n"
+      },
+      {
+        "sourcePage": 228,
+        "quote": "If",
+        "context": ".” They’re \nin the trenches, grinding out results, keeping costs low, and \nstacking small wins until they snowball into success. \nIf you’re the kind of player who wants to play it smart, lean, and \ncalculated, the Bootstrapper is your perfect first mentor. \n \nWhat They Offer \nPassi"
+      },
+      {
+        "sourcePage": 228,
+        "quote": "if",
+        "context": "(6 or below) and would \nnormally lose Capital, you may instead roll again. On the \nsecond roll, you ignore the Capital loss, even if you still \nfail. The Bootstrapper knows how to patch the holes and \nkeep you alive another day.​\n \n \n"
+      },
+      {
+        "sourcePage": 229,
+        "quote": "If",
+        "context": "The Bootstrapper’s Wisdom \n●​ “Your first office? It’s your bedroom. Deal with it.”​\n \n●​ “If you can’t sell it with duct tape, Canva, and a free trial, it \nprobably wasn’t worth selling.”​\n \n●​ “Remember: Amazon started in a garage. Your busi"
+      },
+      {
+        "sourcePage": 229,
+        "quote": "If",
+        "context": "branding or a shiny funnel. They thrive in chaos, live off \nmomentum, and believe that volume beats precision every single \ntime. If you want to learn how to sell, survive, and thrive with \nsheer force of will, the Hustler is your mentor. \n"
+      },
+      {
+        "sourcePage": 230,
+        "quote": "If",
+        "context": "e business \nworld. They know the right people, say the right words, and \nalways seem to land in the right room at the right time. If there’s a \nback door to success, they’ve already found it, and probably \ncharged someone else admission. \n"
+      },
+      {
+        "sourcePage": 231,
+        "quote": "If",
+        "context": "e high-level game, cutting deals, \ntrading favors, and building partnerships that change the \ntrajectory of a business overnight. If you want to learn how to \nscale faster through connections, negotiations, and opportunities, \nthe Deal Maker is your mentor. \nWhat They Offer \nPassiv"
+      },
+      {
+        "sourcePage": 233,
+        "quote": "If",
+        "context": "sn’t connecting. Low CPC = you’re doing something \nright. \n \nCPA (Cost Per Acquisition) \nThe cost to actually acquire a customer. If it costs you $100 to sell \na $50 product, you’ve got a problem. \n \n"
+      },
+      {
+        "sourcePage": 234,
+        "quote": "if",
+        "context": "ROI (Return on Investment) \nDid your money work harder than you, or did it just disappear? \nROI measures if what you spent brought back more than it cost. \n \nLead \nA potential customer. They’ve shown interest but haven’t opened \ntheir wallet yet. Leads are "
+      },
+      {
+        "sourcePage": 239,
+        "quote": "If",
+        "context": "ess \nThe dice rolls? That’s risk. The Capital gains and losses? That’s \ncash flow. The mentors? That’s the power of guidance. \n●​ If you failed because of money management, start \ntracking your expenses IRL.​\n \n●​ If you thrived on Networking, maybe it’s time to hit a local \nevent "
+      },
+      {
+        "sourcePage": 239,
+        "quote": "If",
+        "context": "he mentors? That’s the power of guidance. \n●​ If you failed because of money management, start \ntracking your expenses IRL.​\n \n●​ If you thrived on Networking, maybe it’s time to hit a local \nevent or DM that potential partner.​\n \n●​ If Resilience saved you, ask yourself what habit"
+      },
+      {
+        "sourcePage": 239,
+        "quote": "If",
+        "context": " your expenses IRL.​\n \n●​ If you thrived on Networking, maybe it’s time to hit a local \nevent or DM that potential partner.​\n \n●​ If Resilience saved you, ask yourself what habits keep you \nin the game when things go sideways.​\n \n"
+      },
+      {
+        "sourcePage": 241,
+        "quote": "If",
+        "context": "real ending, the part where you put the book \ndown and decide whether the adventure stops here… or whether \nit’s just beginning. \nIf you close the book and never take action, that’s fine, you had \nfun, maybe learned a thing or two, and rolled some dice. But if \neven one spark insid"
+      },
+      {
+        "sourcePage": 241,
+        "quote": "if",
+        "context": " \nIf you close the book and never take action, that’s fine, you had \nfun, maybe learned a thing or two, and rolled some dice. But if \neven one spark inside you is whispering “I could actually do \nthis…” then you’ve already won. \nBecause here’s the secret: you don’t need permission."
+      },
+      {
+        "sourcePage": 241,
+        "quote": "If",
+        "context": "xes to get \nstarted. You just need the courage to take the first imperfect step. \nSo consider this your final decision point: \n●​ If you’re ready to step into the real world and build \nsomething of your own, turn to… your notebook, your \nlaptop, your first customer. That’s where th"
+      },
+      {
+        "sourcePage": 242,
+        "quote": "If",
+        "context": "●​ If you want to play it safe, carry on living life according to \nsomeone else's game book. \nThe dice are in your hands now. The only question left is: wi"
+      }
+    ],
+    "gambles": [],
+    "endings": [
+      {
+        "sourcePage": 9,
+        "quote": "game over",
+        "context": "t $10,000 and give yourself a \nstrong foundation to build a business that lasts a lifetime! ​\n​\nHowever, if you lose it all, it’s game over, and you’ll have to start \nfrom the beginning again!  \nSo, are you ready to build your empire? \nGrab your dice, sharpen your pencils, and let’s get s"
+      },
+      {
+        "sourcePage": 232,
+        "quote": "game over",
+        "context": "\n \n \nCapital \nYour business’s lifeblood in the game. It’s how you track wins, \nlosses, and progress. Run out of Capital, and it’s game over. \n \n2d6 \nThis is nerdy shorthand for rolling two six-sided dice and adding \nthem together. The dice gods decide your fate more often than \nyou’d like"
+      }
+    ]
+  },
+  "reviewStatus": "extracted-unreviewed",
+  "notes": [
+    "Source-linked setup and appendix evidence only; verified executable perk, mentor, and global rules are authored separately."
+  ]
+}

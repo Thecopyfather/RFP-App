@@ -1,0 +1,16 @@
+{
+  "fileName": "Roll For Profit_ The Start Up Phase (A5 Print Version) (2).pdf",
+  "sha256": "145b34277d44ac043a0ea12a69117032dc5b53b06bda2f959974c21efcf7e9e9",
+  "pageCount": 245,
+  "pdfTitle": "Roll For Profit: The Start Up Phase (A5 Print Version)",
+  "extractionTool": "PyMuPDF",
+  "extractionToolVersion": "1.26.6",
+  "storySectionCount": 284,
+  "reviewStatus": "extracted-unreviewed",
+  "notes": [
+    "The PDF is the sole source of story text and mechanics.",
+    "Physical PDF pages, printed page labels, and numbered story sections are distinct.",
+    "Evidence matches are not complete semantic rules and must not be executed as mechanics.",
+    "No ambiguous rule, destination, or spelling has been silently corrected."
+  ]
+}
