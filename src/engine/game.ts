@@ -1,4 +1,5 @@
 import { readDie, roll2D6, rollD6 } from './dice';
+import { createSecureId } from './ids';
 import { STAT_KEYS } from './types';
 import type { Choice, Condition, DiceSource, Effect, GameCommand, GameDefinition, GameState, PendingRoll, RollOutcome, Stats } from './types';
 
@@ -7,7 +8,7 @@ function requireRule(condition: unknown, message: string): asserts condition {
   if (!condition) throw new Error(message);
 }
 
-export function createInitialState(game: GameDefinition, runId = globalThis.crypto.randomUUID()): GameState {
+export function createInitialState(game: GameDefinition, runId: string = createSecureId()): GameState {
   return {
     schemaVersion: 1, gameId: game.id, contentVersion: game.version, runId, revision: 0,
     phase: 'creation', creationStep: 'attributes', name: '', baseStats: emptyStats(), rolled: [],

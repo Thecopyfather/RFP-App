@@ -38,6 +38,7 @@ These are direct source rules or implementation choices, not additional author a
 - At $10,000 or more, follow the original immediate transition to section 280 unless a section explicitly provides an exception. Explicit authored endings elsewhere in the full book require source-specific implementation rather than a guessed override.
 - React components dispatch engine commands. Only the engine resolves dice, modifiers, effects, affordability and eligibility.
 - Generate unbiased random dice with Web Crypto and rejection sampling. Animation displays recorded dice; it never determines them.
+- Run/command IDs use the native UUID API when available, with a Web Crypto random-byte UUID fallback for LAN HTTP browsers where that API is absent. Never substitute `Math.random` for secure dice or identifiers. Regression tests for the fallback are being verified in the next CI run.
 - Save committed state and dice, then animate their reveal. Use stable event/action identities to reject duplicate delivery, including double taps, remounts and reloads.
 - Keep one initial local save in the current browser. Report invalid saves and unavailable storage visibly. No accounts, cloud synchronization, analytics, paid dependencies or external database are needed.
 - Full-book extraction evidence is marked `extracted-unreviewed`. This means preserved text and detected references, not completed semantic verification.
@@ -64,19 +65,25 @@ The checklist is a release record. A checked item must be backed by an actual ru
 | Complete-source numeric destinations | PASS: validator reports 284 sections, 738 references and 0 errors. Prototype: 19 scenes, 56 references, 39 declared boundary references. |
 | Report unreachable sections and profitable loops | Documented in the manuscript audit and branching report. |
 | Native headless engine checks | PASS on Node 24.19.0: 11 suites, 1,904 assertions, 0 failures. Run `npm run test:native`. |
-| Vitest unit and integration suites | Written; execution blocked by dependency installation failing with network `EPERM` to the session proxy. |
+| Vitest unit and integration suites | Initial GitHub CI passed 76 tests. Eight additional ID regression tests are added; their new CI result is pending. |
 | Playable choice/dice paths against the manuscript | PASS: graph destinations and source-fidelity checks; native engine exercises all 144 ordered dice pairs across four checks. |
 | Perks and all mentor passive/power cases | PASS in native checks, including all 15 perk/mentor combinations. |
 | Affordability, Capital, stat calculations and bankruptcy | PASS in native checks, including zero and negative balances and the victory threshold. |
-| Duplicate commands and refresh during dice | PASS for native state/idempotency and JSON-resume checks; browser refresh checks are written but have not run. |
-| Save/load, malformed saves and unavailable storage | Pending recorded test run. |
+| Duplicate commands and refresh during dice | PASS for native state/idempotency and JSON-resume checks; expanded browser refresh checks are awaiting a successful build and recorded browser run. |
+| Save/load and malformed/incompatible saves | Included in the initial 76 passing Vitest tests; expanded browser/storage scenarios remain pending. |
+| Unavailable browser storage | Browser coverage is written; recorded browser result pending. |
 | Responsive mobile setup and play | Pending recorded browser inspection. |
 | Keyboard operation and reduced motion | Pending recorded browser inspection. |
-| Production build and PWA behavior | Pending recorded build/production inspection. |
+| Production TypeScript/Vite build | Initial GitHub CI failed with TS2345 UUID parameter inference. The fix is being verified in a new run; no passing build claimed yet. |
+| Production service worker, offline reload and manifest | Dedicated PWA browser checks added; their CI result is pending. |
+| Phone-style private LAN HTTP preview | Secure ID fallback added and browser scenario written; recorded browser result pending. Plain HTTP LAN is not a guarantee of PWA installation or offline caching. |
+| Public deployment / PR merge | Not authorized; keep changes on the draft branch and PR unmerged. |
 | Victory route attainable through ordinary prototype play | No; deliberately outside the current vertical slice. |
 | Entire original game mechanically implemented/verified | No; remaining work. |
 
-Dependency installation failed because the execution sandbox could not connect to its network proxy. No local browser preview, production build, Zod-save runtime suite, or Playwright pass is claimed. GitHub Actions configuration is included to run the complete checks after the project is saved to an accessible repository.
+Initial local dependency installation was blocked by network `EPERM` to the session proxy. Verification subsequently ran in [GitHub Actions run 40553456742](https://github.com/Thecopyfather/RFP-App/actions/runs/40553456742), which passed the original 76 Vitest tests before failing the build. The build error exposed a TypeScript inference issue in UUID-defaulted identifiers; fixes and additional regression/browser/PWA coverage are in progress. Historical test passes do not imply that the updated branch has passed every new check. Update this record only after the corresponding run completes.
+
+The draft implementation lives on `codex/startup-prototype` in [RFP-App](https://github.com/Thecopyfather/RFP-App), with [draft PR #1](https://github.com/Thecopyfather/RFP-App/pull/1). The user has explicitly excluded public deployment and PR merging. A local preview on the user’s computer and trusted Wi-Fi is documented in [private-preview.md](private-preview.md); no public tunnel, router forwarding, hosted preview or private HTTPS provisioning is part of that procedure.
 
 ## Next implementation stages
 

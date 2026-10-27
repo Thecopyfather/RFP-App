@@ -4,7 +4,7 @@ import { ArrowDown, ArrowLeft, ArrowRight, ArrowUpRight, BadgeDollarSign, BookOp
 import { registerSW } from 'virtual:pwa-register';
 import { GAME, HOW_TO_PLAY_PARAGRAPHS, INTRO_PARAGRAPHS } from './content/game';
 import { ILLUSTRATIONS } from './content/illustrations';
-import { applyCommand, createInitialState, getAvailableChoices, getMentorAction, getStartingCapital, getStats, getVisibleParagraphs, loadSave, SAVE_KEY, serializeSave } from './engine';
+import { applyCommand, createInitialState, createSecureId, getAvailableChoices, getMentorAction, getStartingCapital, getStats, getVisibleParagraphs, loadSave, SAVE_KEY, serializeSave } from './engine';
 import { STAT_KEYS, type CommandInput, type CreationStep, type GameState, type Mentor, type StatKey } from './engine/types';
 
 const money = (value:number) => new Intl.NumberFormat('en-US', {style:'currency',currency:'USD',maximumFractionDigits:0}).format(value);
@@ -141,7 +141,7 @@ export default function App() {
   function send(command:CommandInput){
     const current=gameRef.current;if(!current)return;
     try {
-      const next=applyCommand(GAME,current,{...command,id:crypto.randomUUID()});
+      const next=applyCommand(GAME,current,{...command,id:createSecureId()});
       persist(next);
       if(next.lastOutcome&&next.lastOutcome!==current.lastOutcome){
         const changes=[next.lastOutcome.capitalChange?`${next.lastOutcome.capitalChange>0?'+':'−'}${money(Math.abs(next.lastOutcome.capitalChange))} Capital`:'',...Object.entries(next.lastOutcome.statChanges).filter(([,v])=>v).map(([key,value])=>`${value!>0?'+':''}${value} ${key}`)].filter(Boolean);

@@ -29,7 +29,7 @@ async function expectNoHorizontalOverflow(page: Page) {
   expect(overflow).toBeLessThanOrEqual(1);
 }
 
-async function createEntrepreneur(page: Page) {
+async function createEntrepreneur(page: Page, mentorName = 'The Deal Maker') {
   await page.goto('/');
   await expect(page.getByRole('button', { name: 'New Game', exact: true })).toBeVisible();
   await expectNoHorizontalOverflow(page);
@@ -43,7 +43,7 @@ async function createEntrepreneur(page: Page) {
   await expect(page.getByRole('heading', { name: 'Find your unfair advantage.', exact: true })).toBeFocused();
   await page.getByRole('button', { name: 'Select Born Closer', exact: true }).click();
   await page.getByRole('button', { name: 'Continue', exact: true }).click();
-  await page.getByRole('button', { name: 'Select The Deal Maker', exact: true }).click();
+  await page.getByRole('button', { name: `Select ${mentorName}`, exact: true }).click();
   await expectNoHorizontalOverflow(page);
   await page.getByRole('button', { name: 'Continue', exact: true }).click();
   await page.getByRole('button', { name: 'Start Adventure', exact: true }).click();
@@ -144,4 +144,76 @@ test('supports keyboard-dismissable reading settings and persists them on reload
   await page.getByRole('button', { name: 'Settings', exact: true }).click();
   await expect(dialog.getByRole('button', { name: 'Larger text', exact: true })).toHaveAttribute('aria-pressed', 'true');
   await expect(dialog.getByRole('checkbox', { name: /Reduce motion/ })).toBeChecked();
+});
+
+async function useOnesForSubsequentDice(page: Page) {
+  await page.evaluate(() => {
+    const previous = crypto.getRandomValues.bind(crypto);
+    Object.defineProperty(crypto, 'getRandomValues', {
+      configurable: true,
+      value(array: ArrayBufferView) {
+        if (array instanceof Uint32Array && array.length === 1) {
+          array[0] = 0;
+          return array;
+        }
+        return previous(array);
+      },
+    });
+  });
+}
+
+async function reachPendingPivotFailure(page: Page) {
+  await useOnesForSubsequentDice(page);
+  await page.getByRole('button', { name: /Quit your job immediately and go all in/ }).click();
+  await page.getByRole('button', { name: /Go straight into selling something/ }).click();
+  await page.getByRole('button', { name: 'Roll Dice', exact: true }).click();
+  await expect(page.getByLabel('Roll total 5', { exact: true })).toBeVisible();
+  await page.getByRole('button', { name: 'Continue Adventure', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'The Cold, Hard Silence – Facing the Crickets', exact: true })).toBeVisible();
+  await page.getByRole('button', { name: 'Roll Dice', exact: true }).click();
+  await expect(page.getByLabel('Roll total 5', { exact: true })).toBeVisible();
+  expect(await saved(page)).toMatchObject({ phase: 'roll-result', sectionId: '24', capital: 1000, powerUsed: false });
+}
+
+for (const scenario of [
+  { mentor: 'The Bootstrapper', power: 'Shoestring Miracle', kind: 'reroll-loss', target: '85', capital: 1000 },
+  { mentor: 'The Hustler', power: 'Grind It Out', kind: 'halve-loss', target: '85', capital: 500 },
+  { mentor: 'The Deal Maker', power: 'The Big Play', kind: 'neutral-result', target: '84', capital: 1000 },
+]) {
+  test(`${scenario.mentor} optionally protects the original §24 failure and stays used after reload`, async ({ page }) => {
+    await createEntrepreneur(page, scenario.mentor);
+    await reachPendingPivotFailure(page);
+    const power = page.getByRole('button', { name: `Use ${scenario.power}`, exact: true });
+    await expect(power).toBeVisible();
+    await power.click();
+    const activated = await saved(page);
+    expect(activated.powerUsed).toBe(true);
+    expect(activated.pendingRoll.power).toBe(scenario.kind);
+    expect(activated.capital).toBe(1000);
+    await expect(power).toHaveCount(0);
+
+    await page.reload();
+    await page.getByRole('button', { name: 'Continue Game', exact: true }).click();
+    expect((await saved(page)).pendingRoll).toEqual(activated.pendingRoll);
+    await expect(power).toHaveCount(0);
+    await page.getByRole('button', { name: 'Continue Adventure', exact: true }).click();
+    expect(await saved(page)).toMatchObject({ phase: 'adventure', sectionId: scenario.target, capital: scenario.capital, powerUsed: true });
+    await page.getByRole('button', { name: 'Character Sheet', exact: true }).first().click();
+    await expect(page.getByRole('dialog', { name: 'Character Sheet' })).toContainText(`${scenario.power} · Used this act`);
+  });
+}
+
+test('declining mentor protection applies the original §85 loss and preserves bankruptcy on reload', async ({ page }) => {
+  await createEntrepreneur(page, 'The Hustler');
+  await reachPendingPivotFailure(page);
+  await expect(page.getByRole('button', { name: 'Use Grind It Out', exact: true })).toBeVisible();
+  await page.getByRole('button', { name: 'Continue Adventure', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Every ending is a beginning.', exact: true })).toBeVisible();
+  expect(await saved(page)).toMatchObject({ phase: 'game-over', sectionId: '85', capital: 0, powerUsed: false });
+  await expect(page.getByRole('button', { name: /Take a step back, validate your offer properly/ })).toHaveCount(0);
+  await page.reload();
+  await page.getByRole('button', { name: 'Continue Game', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Every ending is a beginning.', exact: true })).toBeVisible();
+  expect(await saved(page)).toMatchObject({ phase: 'game-over', capital: 0 });
+  await expect(page.getByRole('button', { name: 'Restart Adventure', exact: true })).toBeVisible();
 });

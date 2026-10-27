@@ -4,7 +4,7 @@ A local-first, mobile-first adaptation of Mark “The Copy Father” Kington’s
 
 ## Run locally
 
-Use a current Node.js LTS release and npm. From this directory:
+Use **Node.js 24 or later** and npm. From this directory:
 
 ```sh
 npm install
@@ -18,6 +18,8 @@ npm run build
 npm run preview
 ```
 
+To play on your phone through the same private Wi-Fi network, follow [the private preview instructions](docs/private-preview.md). The implementation is on the [`codex/startup-prototype` branch](https://github.com/Thecopyfather/RFP-App/tree/codex/startup-prototype) with [draft PR #1](https://github.com/Thecopyfather/RFP-App/pull/1). Public deployment and merging the PR are outside the current authorization.
+
 ## Validate
 
 ```sh
@@ -26,11 +28,12 @@ npm run test:native
 npm run validate:story
 npm run build
 npm run test:e2e
+npm run test:pwa
 ```
 
 Browser tests require the Playwright browser runtime. If it is not installed, install the browser requested by the test runner using Playwright’s documented installation command. See [the acceptance checklist](docs/implementation-decisions.md#acceptance-checklist) for the recorded validation status; the commands above are instructions, not a claim that they have already passed on every machine.
 
-Native engine checks require Node 24 or later and run without installing packages: **11 suites and 1,904 assertions passed**. The branching validator also passed with zero errors. Full Vitest, build, browser, and offline verification remain pending because dependency installation was blocked by this workspace’s network permissions. The complete verification workflow is included in `.github/workflows/verify.yml`.
+Native engine checks run without installing packages: **11 suites and 1,904 assertions passed**. The branching validator also passed with zero errors. The [initial GitHub CI run](https://github.com/Thecopyfather/RFP-App/actions/runs/40553456742) passed **76 Vitest tests**, then failed the production TypeScript build with `TS2345` caused by inferred UUID parameter typing. The correction, secure ID fallback for LAN browsers, eight new ID tests, and expanded browser/PWA checks are being verified; no new passing build or browser/PWA result is claimed here. The complete verification workflow is in `.github/workflows/verify.yml`.
 
 ## What is playable
 
@@ -42,7 +45,7 @@ The source extraction contains all **284 numbered sections**, with original text
 
 ## Saves and offline use
 
-Progress is stored in this browser’s local storage. Saves stay on the current device/browser; there is no account, cloud sync, database, analytics, or paid service. Clearing site data removes local saves. The PWA structure supports installation and a cached production app after its initial load; development-server behavior is not an offline guarantee.
+Progress is stored in this browser’s local storage. Saves stay on the current device/browser and origin; there is no account, cloud sync, database, analytics, or paid service. Clearing site data removes local saves. Ordinary browser play can use the private LAN HTTP preview. Installation and service-worker offline caching require a secure context such as HTTPS or the same-device `localhost`; they are **not guaranteed on a phone’s plain HTTP LAN URL**. A private HTTPS service has not been provisioned. Development-server behavior is not an offline guarantee.
 
 Committed dice and effects are saved as game state, so refreshing during an animation does not generate a new roll or award the same effect again. Deliberate manuscript revisits remain distinct from duplicate delivery of one action.
 
@@ -54,6 +57,7 @@ Committed dice and effects are saved as game state, so refreshing during an anim
 - [Architecture and data model](docs/architecture.md)
 - [Visual design and illustration briefs](docs/design-spec.md)
 - [Implementation decisions and author rulings](docs/implementation-decisions.md)
+- [Private phone preview](docs/private-preview.md)
 
 The PDF is the single source of story content. Author-approved interpretations are documented separately and do not rewrite the source extraction. Unresolved full-book inconsistencies remain visible in the audit.
 
