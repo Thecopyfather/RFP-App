@@ -28,12 +28,15 @@ jobs:
       - name: Run native engine regression checks
         run: npm run test:native
       - name: Build production app
+        id: build
         run: npm run build
       - name: Install Chromium
+        id: chromium
         run: npx playwright install --with-deps chromium
       - name: Test mobile and desktop flows
         run: npm run test:e2e
       - name: Verify production offline PWA and private-network preview
+        if: ${{ !cancelled() && steps.build.outcome == 'success' && steps.chromium.outcome == 'success' }}
         run: npm run test:pwa
       - name: Retain verification evidence
         if: always()

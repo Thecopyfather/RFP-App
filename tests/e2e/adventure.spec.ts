@@ -109,6 +109,7 @@ test('saves a declared prototype boundary and restarts with a fresh character on
   await page.getByRole('button', { name: 'New Game', exact: true }).click();
   const dialog = page.getByRole('dialog', { name: 'A fresh start?', exact: true });
   await dialog.getByRole('button', { name: 'Keep my adventure', exact: true }).click();
+  await expect(dialog).toBeHidden();
   expect((await saved(page)).runId).toBe(oldRunId);
   await page.getByRole('button', { name: 'New Game', exact: true }).click();
   await dialog.getByRole('button', { name: 'New Game', exact: true }).click();
@@ -128,6 +129,44 @@ test('preserves an unreadable save and provides an explicit recovery path', asyn
   await page.getByRole('button', { name: 'New Game', exact: true }).click();
   await page.getByRole('button', { name: 'Keep my adventure', exact: true }).click();
   expect(await page.evaluate((key) => localStorage.getItem(key), SAVE_KEY)).toBe(brokenSave);
+});
+
+test('unavailable local storage keeps the run playable in memory and leaves an explicit save warning', async ({ page }) => {
+  const errors: string[] = [];
+  page.on('pageerror', (error) => errors.push(error.message));
+  await page.addInitScript(() => {
+    Object.defineProperty(window, 'localStorage', {
+      configurable: true,
+      get() { throw new DOMException('Storage is unavailable in this browser context.', 'SecurityError'); },
+    });
+  });
+  await page.goto('/');
+  await expect(page.getByRole('alert')).toContainText('Browser storage is unavailable');
+  await expect(page.getByRole('button', { name: 'Continue Game', exact: true })).toHaveCount(0);
+  await page.getByRole('button', { name: 'New Game', exact: true }).click();
+  await expect(page.getByRole('dialog', { name: 'A fresh start?', exact: true })).toHaveCount(0);
+  await expect(page.getByRole('alert')).toContainText('could not save this change');
+  await page.getByRole('button', { name: 'Create Your Entrepreneur', exact: true }).click();
+  await page.getByLabel(/WHAT SHOULD WE CALL YOU/i).fill('In-memory Avery');
+  await page.getByRole('button', { name: 'Roll All Attributes', exact: true }).click();
+  await page.getByRole('button', { name: 'Continue', exact: true }).click();
+  await page.getByRole('button', { name: 'Select Born Closer', exact: true }).click();
+  await page.getByRole('button', { name: 'Continue', exact: true }).click();
+  await page.getByRole('button', { name: 'Select The Deal Maker', exact: true }).click();
+  await page.getByRole('button', { name: 'Continue', exact: true }).click();
+  await page.getByRole('button', { name: 'Start Adventure', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'The Call to Adventure', exact: true })).toBeVisible();
+  await expect(page.getByRole('alert')).toContainText('Keep this tab open');
+  await page.getByRole('button', { name: 'Character Sheet', exact: true }).first().click();
+  await expect(page.getByRole('dialog', { name: 'Character Sheet' })
+    .getByRole('heading', { name: 'In-memory Avery', exact: true })).toBeVisible();
+  await page.keyboard.press('Escape');
+  await page.getByRole('button', { name: 'Return to Menu', exact: true }).first().click();
+  await expect(page.getByText(/In this tab · not saved/)).toBeVisible();
+  await page.getByRole('button', { name: 'Continue Game', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'The Call to Adventure', exact: true })).toBeVisible();
+  await expect(page.getByRole('alert')).toContainText('could not save this change');
+  expect(errors).toEqual([]);
 });
 
 test('supports keyboard-dismissable reading settings and persists them on reload', async ({ page }) => {

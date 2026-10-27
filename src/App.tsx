@@ -150,7 +150,7 @@ export default function App() {
     }catch(error){setToast(error instanceof Error?error.message:'That action could not be completed. Your progress is unchanged.');}
   }
   function startNew(){persist(createInitialState(GAME));setOverlay(null);setView('intro');}
-  function requestNew(){if(game||session.raw||session.error)setOverlay('restart');else startNew();}
+  function requestNew(){if(game||session.raw)setOverlay('restart');else startNew();}
   function changePreferences(next:Preferences){setPreferences(next);try{localStorage.setItem(PREFS_KEY,JSON.stringify(next));}catch{setToast('Reading preferences could not be saved on this browser.');}}
   function downloadSave(){
     let raw=session.raw||'';
@@ -170,7 +170,7 @@ export default function App() {
         <div className="hero-subtitle"><span className="short-rule"/> THE STARTUP PHASE <span className="edition">VOL. 01</span></div>
         <p className="hero-description">Your ideas. Your decisions. Your first <em>$10,000.</em><br/>An entrepreneurial adventure where every choice counts.</p>
         <div className="menu-actions">{actionButton('New Game',requestNew)}{game&&actionButton('Continue Game',()=>setView('game'),false,true)}</div>
-        {game&&<p className="save-hint"><span className="status-dot"/>{game.name||'Your entrepreneur'} · {game.phase==='creation'?'Character in progress':game.phase==='boundary'?`Saved at prototype boundary ${game.boundary?.target}`:`Section ${game.sectionId}`} · Saved on this device</p>}
+        {game&&<p className="save-hint"><span className="status-dot"/>{game.name||'Your entrepreneur'} · {game.phase==='creation'?'Character in progress':game.phase==='boundary'?`Saved at prototype boundary ${game.boundary?.target}`:`Section ${game.sectionId}`} · {saveError?'In this tab · not saved':'Saved on this device'}</p>}
         <button className="text-link" onClick={()=>setOverlay('help')}><BookOpen size={17}/> How to Play <ArrowUpRight size={15}/></button>
       </section>
       <section className="hero-poster" aria-label="The Startup Phase cover artwork placeholder">
