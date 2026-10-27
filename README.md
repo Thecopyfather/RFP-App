@@ -7,7 +7,7 @@ A local-first, mobile-first adaptation of Mark “The Copy Father” Kington’s
 Use **Node.js 24 or later** and npm. From this directory:
 
 ```sh
-npm install
+npm ci
 npm run dev
 ```
 
@@ -33,7 +33,9 @@ npm run test:pwa
 
 Browser tests require the Playwright browser runtime. If it is not installed, install the browser requested by the test runner using Playwright’s documented installation command. See [the acceptance checklist](docs/implementation-decisions.md#acceptance-checklist) for the recorded validation status; the commands above are instructions, not a claim that they have already passed on every machine.
 
-Native engine checks run without installing packages: **11 suites and 1,904 assertions passed**. The branching validator also passed with zero errors. The [initial GitHub CI run](https://github.com/Thecopyfather/RFP-App/actions/runs/40553456742) passed **76 Vitest tests**, then failed the production TypeScript build with `TS2345` caused by inferred UUID parameter typing. The correction, secure ID fallback for LAN browsers, eight new ID tests, and expanded browser/PWA checks are being verified; no new passing build or browser/PWA result is claimed here. The complete verification workflow is in `.github/workflows/verify.yml`.
+The [recorded green CI baseline](https://github.com/Thecopyfather/RFP-App/actions/runs/40556710722), commit `48f7f2d36e3c6bd2e2cdaaa678c94c5be7862e11`, passed **84 Vitest tests**, **11 native suites / 1,904 assertions**, the manuscript validator, the production TypeScript/Vite build, **18 development-browser checks** and **8 production PWA/LAN checks**. Its dependency audit reported **zero vulnerabilities** with Vitest 4.1.12. The initial UUID-inference build failure was corrected.
+
+The current browser matrix adds a 320px project alongside 390px and 1440px: **27 development-browser checks and 12 production PWA/LAN checks**. These are the configured counts, not a claim that this expanded matrix passed in the earlier baseline. Consult [the latest PR checks](https://github.com/Thecopyfather/RFP-App/pull/1/checks) for the result on the current commit. The complete workflow is in `.github/workflows/verify.yml`.
 
 ## What is playable
 

@@ -9,14 +9,14 @@ Install Git, **Node.js 24 or later**, and npm on your computer. In a terminal:
 ```sh
 git clone --branch codex/startup-prototype --single-branch https://github.com/Thecopyfather/RFP-App.git
 cd RFP-App
-npm install
+npm ci
 npm run build
 npm run preview -- --host 0.0.0.0
 ```
 
 Use your existing GitHub access if Git requests authentication. The branch is the working draft; [PR #1](https://github.com/Thecopyfather/RFP-App/pull/1) stays unmerged. If you already cloned the repository, use that clone, switch to `codex/startup-prototype`, and pull its latest changes before installing/building.
 
-Use `npm ci` instead of `npm install` when the branch includes a committed, current `package-lock.json`. A successful `npm run build` is required before previewing. If it fails, the preview is not ready; the recorded build status is in [the acceptance checklist](implementation-decisions.md#acceptance-checklist).
+`npm ci` installs the versions in the committed `package-lock.json`. A successful `npm run build` is required before previewing. The production build and browser/PWA checks passed in [CI baseline 40556710722](https://github.com/Thecopyfather/RFP-App/actions/runs/40556710722). Check [the latest PR checks](https://github.com/Thecopyfather/RFP-App/pull/1/checks) for the result on the version you clone; the detailed record is in [the acceptance checklist](implementation-decisions.md#acceptance-checklist).
 
 ## Open it on your phone
 
@@ -31,7 +31,7 @@ Do not configure router port forwarding, a public tunnel or a public hosting ser
 
 ## Saving, installation and offline use
 
-Ordinary browser play works through the LAN HTTP preview. The application includes a secure random ID fallback for browsers where `crypto.randomUUID` is unavailable at an HTTP LAN address. Its added tests and the dedicated LAN-browser scenario have their own verification status in the acceptance checklist.
+Ordinary browser play works through the LAN HTTP preview. The application includes a secure random ID fallback for browsers where `crypto.randomUUID` is unavailable at an HTTP LAN address. Its regression tests and the dedicated LAN-browser scenario passed in the recorded green CI baseline. This verifies the automated Chromium scenario; it does not claim testing on every physical phone or browser.
 
 Your phone’s save is local to that browser and address. It is separate from the computer’s save. Return using the same phone, browser, LAN IP and port to resume; a changed IP or different browser is a different storage origin. Clearing site data removes that browser’s progress.
 

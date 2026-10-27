@@ -29,6 +29,16 @@ export default defineConfig({
       },
     },
     {
+      name: 'narrow-mobile-chromium',
+      use: {
+        browserName: 'chromium',
+        viewport: { width: 320, height: 740 },
+        isMobile: true,
+        hasTouch: true,
+        deviceScaleFactor: 2,
+      },
+    },
+    {
       name: 'desktop-chromium',
       use: { browserName: 'chromium', viewport: { width: 1440, height: 1000 } },
     },
